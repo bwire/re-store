@@ -16,7 +16,6 @@ export default class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return <ErrorIndicator />;
     } 
-
     return this.props.children;
   }
 }
