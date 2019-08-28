@@ -7,19 +7,21 @@ const ShoppingCartTable = () => {
       <h2>Your order</h2>
       <table className="table">
         <thead>
-          <th>#</th>
-          <th>Item</th>
-          <th>Count</th>
-          <th>Price</th>
-          <th>Action</th>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Count</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
-            <tdata>1</tdata>
-            <tdata>Site engeneering</tdata>
-            <tdata>2</tdata>
-            <tdata>$40</tdata>
-            <tdata>
+            <td>1</td>
+            <td>Site engeneering</td>
+            <td>2</td>
+            <td>$40</td>
+            <td>
               <button className="btn btn-outline-danger btn-sm float-right">
                 <i className="fa fa-trash-o" />
               </button>
@@ -29,7 +31,7 @@ const ShoppingCartTable = () => {
               <button className="btn btn-outline-warning btn-sm float-right">
                 <i className="fa fa-minus-circle" />
               </button>
-            </tdata>
+            </td>
           </tr>
         </tbody>
       </table>
