@@ -20,6 +20,11 @@ const BookList = ({ books }) => {
 
 
 class BookListContainer extends Component {
+
+  componentDidMount() {
+    this.props.fetchBooks();
+  }
+
   render() {
     const { books, loading, error } = this.props;
     if (loading) {
