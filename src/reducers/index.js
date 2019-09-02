@@ -30,7 +30,7 @@ const reducer = (state = initialState, action) => {
         error: action.payload,
       };
     case 'BOOK_ADDED_TO_CART':
-      const id = action.payload.bookId;
+      const id = action.payload;
       const book = state.books.find((book) => book.id === id);
       const newItem = {
         id: book.id,
