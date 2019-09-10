@@ -33,4 +33,25 @@ export const bookAddedToCart = (bookId) => {
   }
 }
 
+export const cartRowIncrease = (bookId) => {
+  return {
+    type: 'CART_ROW_INCREASE',
+    payload: bookId
+  }
+}
+
+export const cartRowDecrease = (bookId) => {
+  return {
+    type: 'CART_ROW_DECREASE',
+    payload: bookId
+  }
+}
+
+export const cartRowDelete = (bookId) => {
+  return {
+    type: 'CART_ROW_DELETE',
+    payload: bookId
+  }
+}
+
 export { fetchBooks };
